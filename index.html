@@ -2,12 +2,12 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Professional swimming coach Mohamed Khalil - Private and group swimming lessons for all ages">
+        content="Professional swimming coach Mohamed Khalil - Private and group swimming lessons for all ages" />
     <title>Coach Mohamed Khalil - Professional Swimming Trainer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         :root {
             --primary-color: #0077b6;
@@ -94,15 +94,15 @@
             display: flex;
             gap: 20px;
             align-items: center;
+            flex-direction: row; /* الصورة جنب الكلام على الكمبيوتر */
         }
 
         .about-image img {
-    width: 200px; /* زيادة الحجم */
-    height: 200px; /* جعل الطول والعرض متساويين لتحصل على شكل دائري */
-    border-radius: 50%; /* يجعل الصورة دائرية */
-    object-fit: cover; /* يجعل الصورة تتمدد لتغطية المساحة كاملة */
-}
-
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
         .services-list {
             list-style: none;
@@ -192,6 +192,17 @@
             .services-list {
                 font-size: 1.1rem;
             }
+
+            .about-content {
+                flex-direction: column; /* الصورة فوق الكلام */
+                text-align: center; /* النص يتوسط */
+            }
+
+            .about-image img {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 15px; /* مسافة بين الصورة والكلام */
+            }
         }
     </style>
 </head>
@@ -216,7 +227,7 @@
             </div>
             <p>I'm Coach Mohamed, a professional swimming trainer with over 7 years of experience training both adults
                 and kids in a safe and professional environment,
-            Dedicated and passionate Swimming coach with a proven track record of creating engaging and dynamic plans
+                Dedicated and passionate Swimming coach with a proven track record of creating engaging and dynamic plans
                 to promote physical fitness and healthy living. Seeking an opportunity to utilize my skills and
                 experience to positively impact kids' lives and contribute to the overall success of a club or sports
                 institution.</p>
@@ -247,8 +258,8 @@
         <ul class="contact-list">
             <li><a href="tel:01020822524"><i class="fas fa-phone"></i> 01020822524</a></li>
             <li><a href="https://wa.me/201020822524" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-            <li><a href="https://www.instagram.com/mohamednagh44?igsh=ZXlqbDIzeGN4YTd6&utm_source=qr" target="_blank"><i
-                        class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.instagram.com/mohamednagh44?igsh=ZXlqbDIzeGN4YTd6&utm_source=qr"
+                    target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
             <li><a href="https://www.tiktok.com/@mohameds.diaries?_t=ZS-8wK5kkIlTJI&_r=1" target="_blank"><i
                         class="fab fa-tiktok"></i> TikTok</a></li>
             <li><a href="mailto:coach@example.com"><i class="fas fa-envelope"></i> coach@example.com</a></li>
