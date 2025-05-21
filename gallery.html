@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Training gallery of professional swimming coach Mohamed Khalil">
+    <title>Training Gallery - Coach Mohamed Khalil</title>
+    <link rel="stylesheet" href="index.html">
+    <style>
+        :root {
+            --primary-color: #0077b6;
+            --secondary-color: #023e8a;
+            --light-color: #f0f8ff;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        .back-button i {
+            margin-right: 8px;
+        }
+
+        .gallery-title {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-caption {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Video Section Styles */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .video-item {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .video-caption {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin: 0;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+       /* ميديا كويري للموبايل والتابلت */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    section {
+      padding: 20px 10px;
+    }
+
+    .container, .content, .about, .projects, .contact {
+      max-width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    h1, h2, h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </header>
+
+    <h1 class="gallery-title">Training Gallery</h1>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <h3 class="image-caption">2013 Champions Team</h3>
+            <img src="images/2013 Champions Team.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Hamza Zamzam</h3>
+            <img src="images/Adam Ezzat.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Adam Ezzat</h3>
+            <img src="images/Adam.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Baraa Yousry</h3>
+            <img src="images/Baraa Yousry.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Eram</h3>
+            <img src="images/Eram.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Habiba</h3>
+            <img src="images/Habiba.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Hala</h3>
+            <img src="images/Hala.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Hamza sobhy</h3>
+            <img src="images/Hamza sobhy.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Hamza Zamzam</h3>
+            <img src="images/Hamza Zamzam.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Jana</h3>
+            <img src="images/Jana.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Joudy</h3>
+            <img src="images/Joudy.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Lara</h3>
+            <img src="images/Lara.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Mahmoud Zwail</h3>
+            <img src="images/Mahmoud Zwail.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Mahmoud Hany</h3>
+            <img src="images/Mahmoud.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Mohamed Kamal</h3>
+            <img src="images/Mohamed Kamal.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Nour</h3>
+            <img src="images/Nour.jpeg">
+        </div>
+        <div class="gallery-item">
+            <h3 class="image-caption">Team 2013</h3>
+            <img src="images/Team 2013.jpeg">
+        </div>
+    </div>
+
+    <h1 class="gallery-title">Training Videos</h1>
+
+    <div class="video-grid">
+        <div class="video-item">
+            <video controls>
+                <source src="videos/whatsapp-video-2025-05-13-at-45800-pm_XAwKe0Ak (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3 class="video-caption">تمرين سباحة للأطفال</h3>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="videos/25 Race pace Vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3 class="video-caption">25 Race pace</h3>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="videos/25 Race pace Vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3 class="video-caption">25 Race pace</h3>
+        </div>
+    
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Coach Mohamed Khalil. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Update copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

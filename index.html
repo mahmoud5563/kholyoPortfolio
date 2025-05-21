@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional swimming coach Mohamed Khalil - Private and group swimming lessons for all ages">
+    <title>Coach Mohamed Khalil - Professional Swimming Trainer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0077b6;
+            --secondary-color: #023e8a;
+            --light-color: #f0f8ff;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-color);
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        section {
+            padding: 30px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 10px auto;
+        }
+
+        .about-content {
+            font-size: 1.2rem;
+            text-align: justify;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .about-image img {
+    width: 200px; /* زيادة الحجم */
+    height: 200px; /* جعل الطول والعرض متساويين لتحصل على شكل دائري */
+    border-radius: 50%; /* يجعل الصورة دائرية */
+    object-fit: cover; /* يجعل الصورة تتمدد لتغطية المساحة كاملة */
+}
+
+
+        .services-list {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .services-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .services-list li::before {
+            content: "🏊‍♂️";
+            position: absolute;
+            left: 0;
+        }
+
+        .gallery-link {
+            display: inline-block;
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-link:hover {
+            transform: translateX(10px);
+        }
+
+        .gallery-link i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .contact-list a {
+            display: inline-block;
+            color: var(--primary-color);
+            margin: 10px 0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .contact-list a:hover {
+            background-color: rgba(0, 119, 182, 0.1);
+        }
+
+        .contact-list i {
+            width: 25px;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                gap: 15px;
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .about-content,
+            .services-list {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Coach Mohamed Khalil - Professional Swimming Trainer</h1>
+    </header>
+
+    <nav>
+        <a href="#about"><i class="fas fa-user"></i> About Me</a>
+        <a href="#services"><i class="fas fa-swimmer"></i> Services</a>
+        <a href="gallery.html"><i class="fas fa-images"></i> Training Gallery</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact Me</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/aboutMe.jpeg" alt="Coach Mohamed Khalil" />
+            </div>
+            <p>I'm Coach Mohamed, a professional swimming trainer with over 7 years of experience training both adults
+                and kids in a safe and professional environment,
+            Dedicated and passionate Swimming coach with a proven track record of creating engaging and dynamic plans
+                to promote physical fitness and healthy living. Seeking an opportunity to utilize my skills and
+                experience to positively impact kids' lives and contribute to the overall success of a club or sports
+                institution.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Services</h2>
+        <ul class="services-list">
+            <li>Beginner Swimming Training</li>
+            <li>Competition Preparation</li>
+            <li>Kids Swimming Lessons</li>
+            <li>Private & Group Sessions</li>
+            <li>Water Safety Courses</li>
+            <li>Advanced Technique Training</li>
+        </ul>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Gallery Preview</h2>
+        <a href="gallery.html" class="gallery-link">
+            <i class="fas fa-arrow-right"></i> View Full Training Gallery
+        </a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <ul class="contact-list">
+            <li><a href="tel:01020822524"><i class="fas fa-phone"></i> 01020822524</a></li>
+            <li><a href="https://wa.me/201020822524" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/mohamednagh44?igsh=ZXlqbDIzeGN4YTd6&utm_source=qr" target="_blank"><i
+                        class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@mohameds.diaries?_t=ZS-8wK5kkIlTJI&_r=1" target="_blank"><i
+                        class="fab fa-tiktok"></i> TikTok</a></li>
+            <li><a href="mailto:coach@example.com"><i class="fas fa-envelope"></i> coach@example.com</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Coach Mohamed Khalil. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Update copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
