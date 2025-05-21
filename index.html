@@ -2,12 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Professional swimming coach Mohamed Khalil - Private and group swimming lessons for all ages" />
+        content="Professional swimming coach Mohamed Khalil - Private and group swimming lessons for all ages">
+    <meta name="keywords" content="swimming coach, swimming lessons, swimming training, Mohamed Khalil, swimming trainer, private swimming, group swimming, water safety">
     <title>Coach Mohamed Khalil - Professional Swimming Trainer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #0077b6;
@@ -94,7 +95,6 @@
             display: flex;
             gap: 20px;
             align-items: center;
-            flex-direction: row; /* الصورة جنب الكلام على الكمبيوتر */
         }
 
         .about-image img {
@@ -156,6 +156,12 @@
             border-radius: 5px;
         }
 
+        /* علامة الروابط الخارجية */
+        .contact-list a[target="_blank"]::after {
+            font-size: 0.9rem;
+            margin-left: 5px;
+        }
+
         .contact-list a:hover {
             background-color: rgba(0, 119, 182, 0.1);
         }
@@ -188,20 +194,15 @@
                 font-size: 1.6rem;
             }
 
-            .about-content,
-            .services-list {
-                font-size: 1.1rem;
-            }
-
+            /* التعديل عشان الصورة تبقى فوق النص في الموبايل */
             .about-content {
-                flex-direction: column; /* الصورة فوق الكلام */
-                text-align: center; /* النص يتوسط */
+                flex-direction: column;
+                text-align: center;
             }
 
-            .about-image img {
-                width: 150px;
-                height: 150px;
-                margin-bottom: 15px; /* مسافة بين الصورة والكلام */
+            .about-content p {
+                font-size: 1.3rem;
+                line-height: 1.8;
             }
         }
     </style>
@@ -223,7 +224,7 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-image">
-                <img src="images/aboutMe.jpeg" alt="Coach Mohamed Khalil" />
+                <img src="images/aboutMe.jpeg" alt="Portrait of Coach Mohamed Khalil, professional swimming trainer" />
             </div>
             <p>I'm Coach Mohamed, a professional swimming trainer with over 7 years of experience training both adults
                 and kids in a safe and professional environment,
@@ -258,11 +259,10 @@
         <ul class="contact-list">
             <li><a href="tel:01020822524"><i class="fas fa-phone"></i> 01020822524</a></li>
             <li><a href="https://wa.me/201020822524" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-            <li><a href="https://www.instagram.com/mohamednagh44?igsh=ZXlqbDIzeGN4YTd6&utm_source=qr"
-                    target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.instagram.com/mohamednagh44?igsh=ZXlqbDIzeGN4YTd6&utm_source=qr" target="_blank"><i
+                        class="fab fa-instagram"></i> Instagram</a></li>
             <li><a href="https://www.tiktok.com/@mohameds.diaries?_t=ZS-8wK5kkIlTJI&_r=1" target="_blank"><i
                         class="fab fa-tiktok"></i> TikTok</a></li>
-            <li><a href="mailto:coach@example.com"><i class="fas fa-envelope"></i> coach@example.com</a></li>
         </ul>
     </section>
 
